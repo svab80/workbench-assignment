@@ -1,6 +1,10 @@
 #!/usr/bin/env bash 
 
-files=$(ls -l | egrep "^-" | wc -l)
+function count_files {
+	files=$(ls -l | egrep "^-" | wc -l)
+}
+
+count_files
 
 read -p "How many files are there in the current directory? : " guess
 
@@ -15,4 +19,4 @@ do
 
 done
 
-echo "You guessed right, there is $files in this directory!"
+echo "You guessed right! There are $files files in this directory!"
