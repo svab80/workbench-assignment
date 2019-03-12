@@ -1,2 +1,2 @@
 README.md: guessinggame.sh
-	echo "## workbench-assignment" > README.md
+	echo "# Project name: workbench-assignment" > README.md
